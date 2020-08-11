@@ -33,5 +33,5 @@ const generateNotes = wrapStep(
 module.exports = {
   analyzeCommits,
   generateNotes,
-  tagFormat: readPkg.sync().name + '-v${version}',
+  tagFormat: `${readPkg.sync().name}@\${version}`,
 };

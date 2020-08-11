@@ -6,5 +6,5 @@ module.exports = async version => {
   }
 
   const { name } = await readPkg();
-  return `${name}-v${version}`;
+  return `${name}@${version}`;
 };
